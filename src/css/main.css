@@ -87,6 +87,7 @@ body {
   margin-right: 1rem;
   padding: 0.5rem 0.75rem 1rem;
   transition: all 100ms ease-out;
+  border: 2px solid var(--colors--primary);
 }
 
 .site-navigation__link:hover {
@@ -95,12 +96,19 @@ body {
   transition: all 100ms ease-out;
 }
 
-.site-navigation__link--current {
+.site-navigation__link--current,
+.site-navigation__link--current:link {
   color: var(--colors--background);
   background-color: var(--colors--primary);
   text-decoration-color: var(--colors--background);
   font-weight: 500;
   cursor: pointer;
+}
+
+.site-navigation__link--current:hover {
+  transform: none;
+  transition: none;
+  box-shadow: none;
 }
 
 .main {
