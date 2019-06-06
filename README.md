@@ -1,2 +1,3 @@
 # onesie-js
-Find where Onesie Members will Be.
+
+Find which conferences Onesie Members will attend.
