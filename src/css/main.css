@@ -4,9 +4,9 @@
   --background-color-h: 10;
   --background-color-s: 57%;
   --background-color-l: 70%;
-  --foreground-color-h: calc(var(--background-color-h) + 180);
-  --foreground-color-s: calc(var(--background-color-s) * 0.8);
-  --foreground-color-l: calc(var(--background-color-l));
+  --foreground-color-h: 202;
+  --foreground-color-s: 15%;
+  --foreground-color-l: 89%;
 
   --colors--background: hsla(
     var(--background-color-h),
@@ -14,6 +14,7 @@
     var(--background-color-l),
     1
   );
+
   --colors--primary: hsla(
     var(--foreground-color-h),
     var(--foreground-color-s),
@@ -24,6 +25,7 @@
   --layout-gutter: 3rem;
 
   --colors--secondary: hsla(var(--foreground-color-h), 0%, 0%, 0.7);
+  --colors--secondary--light: hsla(var(--foreground-color-h), 0%, 0%, 0.2);
 }
 
 /** Simple Resets **/
@@ -50,6 +52,11 @@ body {
   min-height: 100vh;
   padding: 0 var(--layout-gutter);
   box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .layout {
@@ -85,13 +92,14 @@ body {
   text-decoration-color: var(--colors--primary);
   text-decoration-style: wavy;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 0.5rem 0.75rem 1rem;
   transition: all 100ms ease-out;
   border: 2px solid var(--colors--primary);
 }
 
 .site-navigation__link:hover {
-  box-shadow: 0px 10px 0px 0px var(--colors--secondary);
+  box-shadow: 0px 10px 0px 0px var(--colors--secondary--light);
   transform: translateY(-10px);
   transition: all 100ms ease-out;
 }
@@ -155,14 +163,15 @@ body {
   margin-top: auto;
 }
 
-.footer:after {
+.footer:before {
   content: "";
-  width: 100vw;
+  width: 200vw;
   height: 100%;
   box-sizing: border-box;
   background: var(--colors--secondary);
   position: absolute;
   top: 0;
-  left: calc(-1 * var(--layout-gutter));
+  left: -50%;
+  margin-left: -50%;
   z-index: -1;
 }
