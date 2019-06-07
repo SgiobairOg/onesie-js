@@ -52,6 +52,7 @@ body {
   min-height: 100vh;
   padding: 0 var(--layout-gutter);
   box-sizing: border-box;
+  font-weight: 500;
 }
 
 html,
@@ -86,7 +87,7 @@ body {
 .site-navigation__link,
 .site-navigation__link:link {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   width: 100%;
   color: var(--colors--primary);
   text-decoration-color: var(--colors--primary);
@@ -110,7 +111,6 @@ body {
   background-color: var(--colors--primary);
   text-decoration-color: var(--colors--background);
   font-weight: 500;
-  cursor: pointer;
 }
 
 .site-navigation__link--current:hover {
@@ -152,7 +152,7 @@ body {
 .conference__details p {
   margin-bottom: 0.5rem;
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .footer {
