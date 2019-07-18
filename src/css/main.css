@@ -1,8 +1,8 @@
 :root {
   font-size: 18px;
   font-family: helvetica;
-  --background-color-h: 10;
-  --background-color-s: 57%;
+  --background-color-h: 4;
+  --background-color-s: 82%;
   --background-color-l: 70%;
   --foreground-color-h: 202;
   --foreground-color-s: 15%;
@@ -14,18 +14,16 @@
     var(--background-color-l),
     1
   );
-
   --colors--primary: hsla(
     var(--foreground-color-h),
     var(--foreground-color-s),
     var(--foreground-color-l),
     1
   );
-
   --layout-gutter: 3rem;
 
-  --colors--secondary: hsla(var(--foreground-color-h), 0%, 0%, 0.7);
-  --colors--secondary--light: hsla(var(--foreground-color-h), 0%, 0%, 0.2);
+  --colors--secondary: rgba(0, 0, 0, 0.7);
+  --colors--secondary--light: rgba(0, 0, 0, 0.2);
 }
 
 /** Simple Resets **/
