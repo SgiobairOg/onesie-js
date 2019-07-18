@@ -1,17 +1,25 @@
 :root {
   font-size: 18px;
   font-family: helvetica;
-  --background-color-h: 10;
-  --background-color-s: 57%;
+  --background-color-h: 4;
+  --background-color-s: 82%;
   --background-color-l: 70%;
   --foreground-color-h: 202;
   --foreground-color-s: 15%;
   --foreground-color-l: 89%;
 
-  --colors--background: #de9587;
-
-  --colors--primary: #dfe4e7;
-
+  --colors--background: hsla(
+    var(--background-color-h),
+    var(--background-color-s),
+    var(--background-color-l),
+    1
+  );
+  --colors--primary: hsla(
+    var(--foreground-color-h),
+    var(--foreground-color-s),
+    var(--foreground-color-l),
+    1
+  );
   --layout-gutter: 3rem;
 
   --colors--secondary: rgba(0, 0, 0, 0.7);
